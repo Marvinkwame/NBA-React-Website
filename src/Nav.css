@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  background-color: rgb(14, 14, 66);
+  position: fixed;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: white;
+  padding: 0.5rem;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  border-bottom: 1px solid white;
+  transition: 167ms;
+}
+
+.btns {
+  gap: 10px;
+  display: flex;
+}
+
+.tickets {
+  border: 2px solid white;
+  padding: 0.2rem 1.7rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  transition: 167ms;
+  outline: none;
+  margin-right: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cta-btn {
+  border: 2px solid white;
+  padding: 0.2rem 1.7rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  transition: 167ms;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cta-btn:hover,
+.tickets:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-smallscreen {
+  display: none;
+}
+
+.menu {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar-smallscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  bottom: blue;
+  transition: all 0.7s ease-in-out;
+  --webkit-transition: all ease 0.5s;
+  flex-direction: column;
+  z-index: 5;
+  background-color: rgb(1, 1, 92);
+  color: #fff;
+}
+
+.nav-smallscreen-links {
+  margin: 0 auto;
+}
+
+.nav-smallscreen-links .overlay-links {
+  color: #fff;
+  padding: 2rem;
+}
+
+.nav-smallscreen-links .overlay-links:hover {
+  border-bottom: 1px solid white;
+}
+
+.overlay-close {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.nav-smallscreen-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+  .btns {
+    padding-inline: .4rem;
+  }
+
+  .nba-logo {
+    margin-left: -1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+
+  .tickets,
+  .cta-btn {
+    padding-inline: .75rem;
+  }
+
+  .navbar-smallscreen {
+    display: flex;
+  }
+}
