@@ -43,8 +43,8 @@ function Home() {
       auto();
     }
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     return () => clearInterval(slideInterval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSlide]);
 
   return (
