@@ -8,13 +8,11 @@ import {
 import Trend from "./Trend.jsx";
 import Schedule from "./Schedule.jsx";
 import Pro from "./Pro.jsx";
-import Subscribe from "./Subscribe";
 import Sponsors from "./Sponsors";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const length = data.length;
-  const timeout = React.useRef(null);
 
   const autoScroll = true;
   let slideInterval;
