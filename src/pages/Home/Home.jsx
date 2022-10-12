@@ -8,7 +8,7 @@ import {
 import Trend from "./Trend.jsx";
 import Schedule from "./Schedule.jsx";
 import Pro from "./Pro.jsx";
-import Sponsors from "./Sponsors";
+import Subscribe from "./Subscribe";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
