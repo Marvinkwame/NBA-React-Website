@@ -29,12 +29,15 @@ function Home() {
     setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
   };
 
-  function auto() {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
+  
 
   React.useEffect(() => {
     const autoScroll = true;
+    let slideInterval;
+    
+    function auto() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
     
     if (autoScroll) {
       auto();
