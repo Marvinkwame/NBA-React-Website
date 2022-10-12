@@ -14,7 +14,6 @@ function Home() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const length = data.length;
 
-  let slideInterval;
   let intervalTime = 5000;
 
   React.useEffect(() => {
