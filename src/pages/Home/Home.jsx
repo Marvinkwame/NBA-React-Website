@@ -14,8 +14,7 @@ function Home() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const length = data.length;
 
-  const autoScroll = true;
-  let slideInterval;
+ 
   let intervalTime = 5000;
 
   React.useEffect(() => {
@@ -35,6 +34,8 @@ function Home() {
   }
 
   React.useEffect(() => {
+    const autoScroll = true;
+    
     if (autoScroll) {
       auto();
     }
