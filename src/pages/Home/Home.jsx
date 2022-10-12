@@ -38,7 +38,8 @@ function Home() {
     if (autoScroll) {
       auto();
     }
-    /// eslint-disable-next-line
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     return () => clearInterval(slideInterval);
   }, [currentSlide]);
 
